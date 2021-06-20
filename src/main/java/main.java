@@ -1,9 +1,32 @@
-public class main {
+import java.util.Scanner;
 
-    public static void main(String[] args) {
-        calculadora calc = new calculadora();
+public class main
+{
+
+    public static void main(String[] args)
+    {
+
+        Scanner entrada = new Scanner(System.in);
+
+        System.out.print("informe a média: ");
+        double media = entrada.nextDouble();
+
+        if(media <=10.0 && media >= 7.0)
+        {
+            System.out.println("Aprovado!");
+            System.out.println("Parabens!");
+        }
+
+        entrada.close();
 
 
-        calc.calcula(10, 8, 0);
+
+
     }
+
+
+
+
+
+
 }
